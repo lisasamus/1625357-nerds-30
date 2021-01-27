@@ -1,6 +1,6 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/30/user/1625357).
+* Студент: [Елизавета Соколова](https://up.htmlacademy.ru/htmlcss/30/user/1625357).
 * Наставник:[Виктория Постнова](https://htmlacademy.ru/profile/id1714993).
 
 ---
