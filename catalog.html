@@ -3,21 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/32.png">
+    <link rel="icon" href="img/icon.svg" type="image/svg+xml">
   </head>
   <body>
     <header>
       <nav>
         <a href="index.html">
-          <img src="https://via.placeholder.com/150x100" alt="Логотип студии «Nёrd's»">
+          <img src="img/nerds-logo.svg" alt="Nёrd's">
         </a>
         <ul>
-          <li><a href="blank.html">Студия</a></li>
-          <li><a href="blank.html">Клиенты</a></li>
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="blank.html">Контакты</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
-          <a href="blank.html">Корзина</a>
       </nav>
+      <div>
+        <a href="#">Корзина</a>
+      </div>
     </header>
 
 
@@ -28,8 +33,8 @@
         <form method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Стоимость:</legend>
-            <label>от<input type="text" value="0"></label>
-            <label>до<input type="text" value="15 000"></label>
+            <label>от<input type="number" value="0"></label>
+            <label>до<input type="number" value="15 000"></label>
           </fieldset>
           <fieldset>
             <legend>Сетка:</legend>
@@ -60,22 +65,22 @@
               </li>
 
               <li>
-                <input type="checkbox" name="Блок преимуществ" id="filter-block">
+                <input type="checkbox" name="block" id="filter-block">
                 <label for="filter-block">Блок преимуществ</label>
               </li>
 
               <li>
-                <input type="checkbox" name="Новости" id="filter-news" checked>
+                <input type="checkbox" name="news" id="filter-news" checked>
                 <label for="filter-news">Новости</label>
               </li>
 
               <li>
-                <input type="checkbox" name="Галерея" id="filter-galery">
+                <input type="checkbox" name="galery" id="filter-galery">
                 <label for="filter-galery">Галерея</label>
               </li>
 
               <li>
-                <input type="checkbox" name="Корзина" id="filter-cart">
+                <input type="checkbox" name="cart" id="filter-cart">
                 <label for="filter-cart">Корзина</label>
               </li>
             </ul>
@@ -93,78 +98,71 @@
                 <a>По цене</a>
               </li>
               <li>
-                <a href="blank.html">По типу</a>
+                <button>По типу</button>
+              <li>
+                <button>По названию</<button>
               </li>
               <li>
-                <a href="blank.html">По названию</a>
+                <button>По убыванию</button>
+              </li>
+              <li>
+                <button>По возрастанию</button>
               </li>
             </ul>
           </div>
         <ul>
           <li>
-            <a href="produkt.html">
-              <h3>Sedona</h3>
+            <a href="produkt.html"><h3>Sedona</h3></a>
               <p>
-                <img src="https://via.placeholder.com/150x100" alt="Информационный сайт для туристов Sedona">
+                <img src="img/cartochka sedona.jpg" width="358" height="578" alt="Информационный сайт для туристов Sedona">
               </p>
-            </a>
               <p>Информационный сайт<br>
                  для туристов</p>
               <span>9900 ₽</span>
           </li>
 
           <li>
-            <a href="produkt.html">
-              <h3>Pink</h3>
+            <a href="produkt.html"><h3>Pink</h3></a>
               <p>
-                <img src="https://via.placeholder.com/150x100" alt="Приложение Pink">
+                <img src="img/cartochka Pink.jpg" width="358" height="578" alt="Приложение Pink">
               </p>
-            </a>
               <p>Приложение Pink</p>
               <span>9900 ₽</span>
           </li>
 
           <li>
-            <a href="produkt.html">
-              <h3>Borodinski</h3>
+            <a href="produkt.html"><h3>Borodinski</h3></a>
               <p>
-                <img src="https://via.placeholder.com/150x100" alt="Барбершоп Borodinski">
+                <img src="img/cartochka borodinski.jpg" width="358" height="578" alt="Барбершоп Borodinski">
               </p>
-            </a>
               <p>Барбершоп Borodinski</p>
               <span>9900 ₽</span>
           </li>
 
           <li>
-            <a href="produkt.html">
-              <h3>Mishka</h3>
+            <a href="produkt.html"><h3>Mishka</h3></a>
               <p>
-                <img src="https://via.placeholder.com/150x100" alt="Mishka">
+                <img src="img/cartochka mishka.jpg" width="358" height="578" alt="Mishka">
               </p>
-            </a>
               <p>Милые штуки ручной<br>
                  работы для дома</p>
               <span>9900 ₽</span>
           </li>
 
           <li>
-            <a href="produkt.html">
-              <h3>Учебный центр А+</h3>
+            <a href="produkt.html"><h3>Учебный центр А+</h3></a>
               <p>
-                <img src="https://via.placeholder.com/150x100" alt="Учебный центр А+">
+                <img src="img/cartochka A plus.jpg" width="358" height="578" alt="Учебный центр А+">
               </p>
-            </a>
               <p>Учебный центр А+</p>
               <span>9900 ₽</span>
           </li>
 
           <li>
-            <a href="produkt.html">
-              <h3>Кваст</h3>
+            <a href="produkt.html"><h3>Кваст</h3></a>
               <p>
-                <img src="https://via.placeholder.com/150x100" alt="Кваст">
+                <img src="img/cartochka kvast.jpg" width="358" height="578" alt="Кваст">
               </p>
-            </a>
               <p>Крафтовый квас Кваст</p>
               <span>9900 ₽</span>
           </li>
@@ -180,7 +178,7 @@
             <a href="#">3</a>
           </li>
           <li>
-            <a href="#">Вперед</a>
+            <a href="#">Следующая</a>
           </li>
         </ul>
       </section>
@@ -188,12 +186,14 @@
     <footer>
       <section>
         <h2>Контакты</h2>
-        <p>NЁRD'S DESIGN STUDIO<br>
-          191186, Санкт-Петербург,<br>
-          ул.Большая Конюшенная, д.19/8<br>
-          тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <img src="img/map1.jpg" width="1440" height="416" alt="Карта">
+        <img src="img/map-marker.png" width="231" height="190" alt="Карта">
+        <p>NЁRD'S DESIGN STUDIO</p>
+        <p>191186, Санкт-Петербург,<br>
+          ул.Большая Конюшенная, д.19/8</p>
+        <p>тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+        <!-- <h3>Форма связи</h3>
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
 
           <p><label for="Name">Ваше имя:</label></p>
           <input type="text" id="Name" placeholder="Имя Фамилия">
@@ -204,29 +204,26 @@
           <p><label for="letter">Текст письма:</label></p>
           <input type="text" id="letter" placeholder="В свободной форме">
 
-          <button type="submit">Отправить</button>
-        </form>
+          <input type="submit" value="Отправить">
+        </form> -->
       </section>
 
 
       <section>
         <ul>
           <li>
-            <a href="#">Вконтакте</a>
+            <a href="#"><img src="img/vk-icon.svg" alt="">Вконтакте</a>
           </li>
           <li>
-            <a href="#">Фейсбук</a>
+            <a href="#"><img src="img/fb-icon.svg" alt="">Фэйсбук</a>
           </li>
           <li>
-            <a href="#">Инстаграм</a>
+            <a href="#"><img src="img/insta-icon.svg" alt="">Инстаграм</a>
           </li>
         </ul>
         <p>Давайте дружить, это выгодно!</p>
         <p>Скидка 10% для друзей из социальных сетей</p>
       </section>
     </footer>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
   </body>
 </html>
