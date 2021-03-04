@@ -30,7 +30,7 @@ body {
   min-width: 960px;
   margin: 0;
   padding: 0;
-  font-family: "roboto", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -52,10 +52,6 @@ a {
   min-width: 960px;
   margin: 0;
   padding: 0;
-  font-family: "roboto", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
   color: var(--anthracite-gray);
   background-color: var(--white);
   background-position: top center;
@@ -106,6 +102,8 @@ a {
 .site-navigation a,
 .user-navigation a {
   color: var(--black);
+  color: var(--basic-white);
+  display: block; /*пункты меню сами встали как надо*/
 }
 .site-navigation a:hover,
 .user-navigation a:hover {
@@ -122,6 +120,20 @@ a {
   color: var(--black);
   align-items: center;
 }
+/*.login-link::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-image: url("img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 1;
+}
+.user-navigation .login-link {
+  padding-left: 50px;
+  position: relative;
+}*/
 
 
 /* Button */
@@ -330,32 +342,54 @@ a {
 
 /*Pagination*/
 .pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-bottom: 60px;
   list-style: none;
 }
-.pagination-item-current a,
+.pagination-item-current,
+.pagination-item {
+  display:block;
+  border-radius: 3px;
+  margin-right: 11px;
+}
+
+.pagination-item-current a {
+  padding: 14px 17px 12px 17px;
+}
+
 .pagination-item a {
+  padding: 17px 20px 15px 20px;
   font-weight: 500;
   line-height: 18px;
+  text-transform: uppercase;
   color: var(--black);
   background-color: var(--pale-gray-standby);
 }
+.pagination-item-current a:hover,
 .pagination-item a:hover {
   background-color: var(--gray-touch);
 }
+.pagination-item-current a:focus,
 .pagination-item a:focus {
   background-color: var(--gray-press);
 }
+.pagination-item-current a:active,
 .pagination-item a:active {
   background-color: rgba(0, 0, 0, 0.0001);
 }
-.pagination-item-current a,
-.pagination-item-current a:hover,
-.pagination-item-current a:focus,
-.pagination-item-current a:active {
+.pagination-item-current a {
   background-color: var(--white);
   border: 3px solid #DBDBDB;
+  border-radius: 3px;
 }
-
+.pagination-item:last-child a {
+  padding: 17px 77px 15px 77px;
+}
+.pagination-item:last-child {
+  margin-right: 0;
+}
 
 /* Features */ /*долго дорого скрупулезно*/
 .feature {
@@ -389,6 +423,7 @@ a {
   column-gap: 100px;
   margin: 80px auto;
 }
+
 
 .service h3 {
   font-weight: bold;
@@ -437,7 +472,22 @@ a {
 }
 .about-service-list {
   list-style: none;
+  margin: 0;
 }
+.about-service-list-item {
+  display: block;
+  margin-top: 23px;
+}
+/*.about-service-list-item::before {
+  content: "";
+  position: absolute;
+  top: auto;
+  left: 180px;
+  width: 25px;
+  height: 2px;
+  background-color: var(--red-standby);
+}
+*/
 /*index-columns*/ /*содержит О нас и достижения*/
 .index-columns {
   /*width: 1158px;
@@ -446,7 +496,7 @@ a {
   margin: 0 auto;*/
 }
 .about {
-width: 660px;
+  width: 660px;
 }
 .index-columns {
   width: 1158px;
@@ -454,7 +504,14 @@ width: 660px;
   margin: 0 auto;
   justify-content: space-between;
 }
-
+.index-columns::before {
+  content: "";
+  position: absolute;
+  bottom: -39px;
+  width: 1158px;
+  height: 2px;
+  background-color: var(--pale-gray-standby);
+}
 
 /* achievements */
 .achievements-motto {
@@ -535,6 +592,22 @@ width: 660px;
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 45px 0;
+}
+.partners-list li::before {
+  content: "";
+  position: absolute;
+  bottom: 46px;
+  width: 1158px;
+  height: 2px;
+  background-color: var(--pale-gray-standby);
+}
+.partner-item::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 52px;
+  margin: auto;
+  background-color: var(--pale-gray-standby);
 }
 
 
@@ -619,4 +692,17 @@ width: 660px;
 /*GRID*/
 .page {
   height: 100%;
+}
+/*visually-hidden*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
